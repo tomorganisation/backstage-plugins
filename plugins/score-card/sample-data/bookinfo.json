@@ -1101,6 +1101,25 @@
             }
           ],
           "details": "..."
+        },
+        {
+          "id": 4396,
+          "title": "SAST",
+          "scorePercent": 100,
+          "scoreSuccess": "success",
+          "howToScore": "fulfillment of each sub-requirement gives you the final score.",
+          "scoreChecks": [
+            {
+              "NVD1": 50
+            },
+            {
+              "NVD2": 50
+            },
+            {
+              "None of the above": 0
+            }
+          ],
+          "details": "Everything is scanned, and ok"
         }
       ]
     }
