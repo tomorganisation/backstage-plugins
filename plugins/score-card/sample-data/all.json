@@ -127,7 +127,7 @@
         "title": "Operations",
         "scorePercent": 50,
         "scoreLabel": "D",
-        "scoreSuccess": "partial",
+        "scoreSuccess": "almost-success",
         "scoreEntries": [
           {
             "id": 2210,
