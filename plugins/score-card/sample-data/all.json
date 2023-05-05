@@ -1,6 +1,6 @@
 [
   {
-    "systemEntityName": "bookinfo-dev-digitalproduct",
+    "systemEntityName": "bookinfo-dev-digitalproducts",
     "systemTier": "A",
     "SystemDataConfidentiality": "Confidential",
     "SystemDataSensitivity": ["PII", "Sensitive-PII"],
