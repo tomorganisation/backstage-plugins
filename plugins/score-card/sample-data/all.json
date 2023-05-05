@@ -1,6 +1,6 @@
 [
   {
-    "systemEntityName": "bookinfo-dev-digitalproducts",
+    "systemEntityName": "axon-sync",
     "systemTier": "A",
     "SystemDataConfidentiality": "Confidential",
     "SystemDataSensitivity": ["PII", "Sensitive-PII"],
