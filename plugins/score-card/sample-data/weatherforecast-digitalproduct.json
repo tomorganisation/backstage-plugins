@@ -15,22 +15,12 @@
       "scoreEntries": [
         {
           "id": 2157,
-          "title": "Branching",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "In case the project is using GitFlow or GitHub flow (i.e. isolated development in branches with pull requests to integration trunk that is generating packages being deployed to environments where release branch may exist) give 100% score. In other cases give 0%.",
-          "scoreChoices": [
-            {
-              "Gitflow": 100
-            },
-            {
-              "GitHubflow": 100
-            },
-            {
-              "no branch development": 0
-            }
-          ],
-          "details": "... here write the reasoning for the score, markdown is supported, see [scoring wiki](https://dev.azure.com/organization/project/_wiki/wikis/project.wiki/4335/Scoring)"
+          "title": "Unit testing",
+          "scorePercent": 80,
+          "scoreSuccess": "success",
+          "howToScore": "Code coverage of unit tests on core functionality",
+          "scoreChoices": [],
+          "details": "Is unit testing implemented on the core functionality?"
         },
         {
           "id": 2163,
