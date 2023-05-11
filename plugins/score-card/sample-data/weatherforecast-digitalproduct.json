@@ -5,7 +5,7 @@
   "SystemDataSensitivity": "PII",
   "generatedDateTimeUtc": "2021-07-22 10:00",
   "scorePercent": 55,
-  "scoreSuccess": "success",
+  "scoreSuccess": "partial",
   "areaScores": [
     {
       "id": 1,
