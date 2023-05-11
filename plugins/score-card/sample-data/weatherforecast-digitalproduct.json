@@ -23,6 +23,33 @@
           "details": "Is unit testing implemented on the core functionality?"
         },
         {
+          "id": 2157,
+          "title": "Integration testing",
+          "scorePercent": 70,
+          "scoreSuccess": "almost-success",
+          "howToScore": "Code coverage of integration tests on integration logic",
+          "scoreChoices": [],
+          "details": "Is integration testing or contract driven development implemented on the integration logic?"
+        },
+        {
+          "id": 2157,
+          "title": "BDD",
+          "scorePercent": 85,
+          "scoreSuccess": "success",
+          "howToScore": "Code coverage of functional BDD tests on happy path and corner cases",
+          "scoreChoices": [],
+          "details": "Are all functional scenarios tested using automated BDD scenarios?"
+        },
+        {
+          "id": 2157,
+          "title": "UI Test",
+          "scorePercent": 30,
+          "scoreSuccess": "almost-failure",
+          "howToScore": "Percentage of how many UI screens have a happy path UI test",
+          "scoreChoices": [],
+          "details": "Is there a happy path UI test for all screens?"
+        },
+        {
           "id": 2163,
           "title": "Swagger",
           "scorePercent": 0,
