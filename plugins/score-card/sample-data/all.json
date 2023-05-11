@@ -1,6 +1,6 @@
 [
   {
-    "systemEntityName": "case-claim-sync",
+    "systemEntityName": "weatherforecast-digitalproduct",
     "systemTier": "A",
     "SystemDataConfidentiality": "Confidential",
     "SystemDataSensitivity": ["PII", "Sensitive-PII"],
