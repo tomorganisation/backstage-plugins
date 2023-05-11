@@ -4,7 +4,7 @@
   "SystemDataConfidentiality": "Confidential",
   "SystemDataSensitivity": "PII",
   "generatedDateTimeUtc": "2021-07-22 10:00",
-  "scorePercent": 81,
+  "scorePercent": 55,
   "scoreSuccess": "success",
   "areaScores": [
     {
@@ -233,148 +233,38 @@
       "scoreEntries": [
         {
           "id": 2187,
-          "title": "Code Reviews",
-          "scorePercent": 0,
+          "title": "Documented",
+          "scorePercent": 90,
           "scoreSuccess": "success",
           "howToScore": "fulfillment of each sub-requirement gives you the final score. PR(s) = Pull Request(s).",
-          "scoreChecks": [
-            {
-              "PR requires reviewer": 20
-            },
-            {
-              "No override possible": 20
-            },
-            {
-              "PRs are well described": 20
-            },
-            {
-              "PRs are small": 20
-            },
-            {
-              "PRs has comments": 20
-            },
-            {
-              "None of the above": 0
-            }
-          ],
-          "details": "..."
+          "scoreChecks": [],
+          "details": "Is the architecture documented using C4 diagrams?"
         },
         {
           "id": 2191,
-          "title": "Unit Tests",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "Enter a score based on SonarCloud. If not connected to SonarCloud or the unit test are too simple and not really testing a logic, give 0 %",
-          "details": "..."
+          "title": "ARB",
+          "scorePercent": 100,
+          "scoreSuccess": "success",
+          "howToScore": "",
+          "details": "Is the architecture reviewed by the Architecture Review Board?"
         },
         {
           "id": 2189,
-          "title": "Integration Tests",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "fulfillment of each sub-requirement gives you the final score. IT = Integration Tests.",
-          "scoreChecks": [
-            {
-              "IT runs during PR": 20
-            },
-            {
-              "IT runs on regular base against DEV": 20
-            },
-            {
-              "IT runs on regular base against UAT": 20
-            },
-            {
-              "IT runs on regular base against STG": 20
-            },
-            {
-              "IT runs on regular base against LIVE": 20
-            },
-            {
-              "None of the above": 0
-            }
-          ],
-          "details": "..."
+          "title": "ADR",
+          "scorePercent": 100,
+          "scoreSuccess": "success",
+          "howToScore": "",
+          "scoreChecks": [],
+          "details": "Are all architectural decisions documented using ADRs?"
         },
         {
           "id": 2190,
-          "title": "Performance Tests",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "fulfillment of each sub-requirement gives you the final score. PT = Performance Tests.",
-          "scoreChecks": [
-            {
-              "PT runs during PR": 20
-            },
-            {
-              "PT runs on regular base against DEV": 20
-            },
-            {
-              "PT runs on regular base against UAT": 20
-            },
-            {
-              "PT runs on regular base against STG": 20
-            },
-            {
-              "PT runs on regular base against LIVE": 20
-            },
-            {
-              "None of the above": 0
-            }
-          ],
-          "details": "..."
-        },
-        {
-          "id": 2186,
-          "title": "Automation Tests",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "fulfillment of each sub-requirement gives you the final score. E2E = End to end automation tests.",
-          "scoreChecks": [
-            {
-              "E2E runs during PR": 20
-            },
-            {
-              "E2E runs on regular base against DEV": 20
-            },
-            {
-              "E2E runs on regular base against UAT": 20
-            },
-            {
-              "E2E runs on regular base against STG": 20
-            },
-            {
-              "E2E runs on regular base against LIVE": 20
-            },
-            {
-              "None of the above": 0
-            }
-          ],
-          "details": "..."
-        },
-        {
-          "id": 2188,
-          "title": "Design Reviews",
-          "scorePercent": 0,
-          "scoreSuccess": "unknown",
-          "howToScore": "fulfillment of each sub-requirement gives you the final score. DR = Design Review.",
-          "scoreChecks": [
-            {
-              "Design reviews are being done only inside team": 10
-            },
-            {
-              "Global Architecture DR is being done outside team": 30
-            },
-            {
-              "DB/API/Messaging DR is being done outside team": 30
-            },
-            {
-              "Security DR is being done outside team": 30
-            },
-            {
-              "None of the above": 0
-            }
-          ],
-          "details": "..."
+          "title": "Fitness tests",
+          "scorePercent": 50,
+          "scoreSuccess": "partial",
+          "howToScore": "",
+          "scoreChecks": [],
+          "details": "Are architectural decisions verified in code using fitness tests?"
         }
       ]
     },
