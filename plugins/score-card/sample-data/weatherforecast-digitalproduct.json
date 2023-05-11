@@ -9,7 +9,7 @@
   "areaScores": [
     {
       "id": 1,
-      "title": "Quality",
+      "title": "001 Quality",
       "scorePercent": 81,
       "scoreSuccess": "success",
       "scoreEntries": [
@@ -210,7 +210,7 @@
     },
     {
       "id": 2,
-      "title": "Architecture",
+      "title": "002 Architecture",
       "scorePercent": 85,
       "scoreSuccess": "success",
       "scoreEntries": [
@@ -363,7 +363,7 @@
     },
     {
       "id": 3,
-      "title": "Security",
+      "title": "003 Security",
       "scorePercent": 46,
       "scoreSuccess": "partial",
       "scoreEntries": [
@@ -631,7 +631,7 @@
     },
     {
       "id": 4,
-      "title": "Operations",
+      "title": "004 Operations",
       "scorePercent": 72,
       "scoreSuccess": "almost-success",
       "scoreEntries": [
@@ -916,7 +916,7 @@
     },
     {
       "id": 5,
-      "title": "Documentation",
+      "title": "005 Documentation",
       "scorePercent": 15,
       "scoreSuccess": "failure",
       "scoreEntries": [
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 6,
-      "title": "Release management",
+      "title": "006 Release management",
       "scorePercent": 29,
       "scoreSuccess": "almost-failure",
       "scoreEntries": [
