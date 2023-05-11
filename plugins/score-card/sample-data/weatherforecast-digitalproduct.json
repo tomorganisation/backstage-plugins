@@ -8,9 +8,9 @@
   "scoreSuccess": "success",
   "areaScores": [
     {
-      "id": 2199,
-      "title": "Code",
-      "scorePercent": 59,
+      "id": 1,
+      "title": "Quality",
+      "scorePercent": 81,
       "scoreSuccess": "success",
       "scoreEntries": [
         {
@@ -209,16 +209,16 @@
       ]
     },
     {
-      "id": 4333,
-      "title": "Quality",
-      "scorePercent": 0,
-      "scoreSuccess": "unknown",
+      "id": 2,
+      "title": "Architecture",
+      "scorePercent": 85,
+      "scoreSuccess": "success",
       "scoreEntries": [
         {
           "id": 2187,
           "title": "Code Reviews",
           "scorePercent": 0,
-          "scoreSuccess": "unknown",
+          "scoreSuccess": "success",
           "howToScore": "fulfillment of each sub-requirement gives you the final score. PR(s) = Pull Request(s).",
           "scoreChecks": [
             {
@@ -362,10 +362,10 @@
       ]
     },
     {
-      "id": 2208,
-      "title": "Operations",
-      "scorePercent": 0,
-      "scoreSuccess": "unknown",
+      "id": 3,
+      "title": "Security",
+      "scorePercent": 46,
+      "scoreSuccess": "partial",
       "scoreEntries": [
         {
           "id": 2185,
@@ -630,10 +630,10 @@
       ]
     },
     {
-      "id": 3937,
-      "title": "Documentation",
-      "scorePercent": 0,
-      "scoreSuccess": "unknown",
+      "id": 4,
+      "title": "Operations",
+      "scorePercent": 72,
+      "scoreSuccess": "almost-success",
       "scoreEntries": [
         {
           "id": 3938,
@@ -915,10 +915,219 @@
       ]
     },
     {
-      "id": 4328,
-      "title": "Security",
-      "scorePercent": 0,
-      "scoreSuccess": "unknown",
+      "id": 5,
+      "title": "Documentation",
+      "scorePercent": 15,
+      "scoreSuccess": "failure",
+      "scoreEntries": [
+        {
+          "id": 2158,
+          "title": "Https",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "For 100% score application (client) endpoints needs to be accessible via HTTPS and latest secure protocol TLS 1.2+. In case the application is accessible via HTTP or some unsecure protocol (SSL X, weak cypher) the score is 0 %.",
+          "scoreChoices": [
+            {
+              "All endpoints via HTTPS/TLS 1.2": 100
+            },
+            {
+              "No HTTPS or unsecure SSL": 0
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 2159,
+          "title": "Identity Management",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "For 100% score application endpoints (FE, backoffice, API) needs to be authenticated via our identity server or via Azure Active directory.",
+          "scoreChoices": [
+            {
+              "IdentityServer": 100
+            },
+            {
+              "Azure Active Directory (native)": 100
+            },
+            {
+              "Azure Active Directory (SAML)": 100
+            },
+            {
+              "Active Directory": 50
+            },
+            {
+              "Custom user and password": 20
+            },
+            {
+              "not protected": 0
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4388,
+          "title": "Secrets handling",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "See the choices.",
+          "scoreChoices": [
+            {
+              "There is no secret anywhere in the code or the server": 100
+            },
+            {
+              "This was not checked/there are secrets present": 0
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4395,
+          "title": "Password rotation",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "See the choices.",
+          "scoreChoices": [
+            {
+              "We need to use secrets but we rotate those automatically every week": 100
+            },
+            {
+              "We need to use secrets but we rotate those automatically every month": 90
+            },
+            {
+              "We need to use secrets but we rotate those automatically every 6months": 80
+            },
+            {
+              "We need to use secrets but we rotate those automatically every year": 70
+            },
+            {
+              "We need to use secrets but we rotate those automatically on demand": 40
+            },
+            {
+              "We need to use secrets but we rotate those only manually on demand": 20
+            },
+            {
+              "We need to use secrets but we can not rotate those without downtime": 0
+            },
+            {
+              "We DO NOT NEED to use secrets": 100
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4392,
+          "title": "Managed identity",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "See the choices.",
+          "scoreChoices": [
+            {
+              "We use managed identity for every service where its available": 100
+            },
+            {
+              "We use managed identity for most of the services": 80
+            },
+            {
+              "We use managed identity for some of the services": 40
+            },
+            {
+              "We do not use managed identity yet...": 0
+            },
+            {
+              "We can not use managed identity": 100
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4389,
+          "title": "OWASP",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "fulfillment of each sub-requirement gives you the final score.",
+          "scoreChecks": [
+            {
+              "Regular OWASP audits": 40
+            },
+            {
+              "Regular OWASP trainings": 40
+            },
+            {
+              "At least general knowledge about OWASP": 10
+            },
+            {
+              "At least once OWASP audit": 10
+            },
+            {
+              "None of the above": 0
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4391,
+          "title": "Encryption of confidential data",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "See the choices.",
+          "scoreChoices": [
+            {
+              "We have sensitive data and we encrypt those": 100
+            },
+            {
+              "We have sensitive data and DO NOT encrypt": 0
+            },
+            {
+              "We do not have sensitive data...": 100
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4394,
+          "title": "Third-party components scanning",
+          "scorePercent": 0,
+          "scoreSuccess": "unknown",
+          "howToScore": "fulfillment of each sub-requirement gives you the final score.",
+          "scoreChecks": [
+            {
+              "3rd party components scanned during PR": 50
+            },
+            {
+              "3rd party components scanned daily on main branch ": 50
+            },
+            {
+              "None of the above": 0
+            }
+          ],
+          "details": "..."
+        },
+        {
+          "id": 4396,
+          "title": "SAST",
+          "scorePercent": 100,
+          "scoreSuccess": "success",
+          "howToScore": "fulfillment of each sub-requirement gives you the final score.",
+          "scoreChecks": [
+            {
+              "NVD1": 50
+            },
+            {
+              "NVD2": 50
+            },
+            {
+              "None of the above": 0
+            }
+          ],
+          "details": "Everything is scanned, and ok"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Release management",
+      "scorePercent": 29,
+      "scoreSuccess": "almost-failure",
       "scoreEntries": [
         {
           "id": 2158,
