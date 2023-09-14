@@ -632,7 +632,7 @@
     ]
   },
   {
-    "systemEntityName": "policy-sync",
+    "systemEntityName": "prediction-dev-digitalproduct",
     "systemTier": "A",
     "SystemDataConfidentiality": "Confidential",
     "SystemDataSensitivity": ["PII", "Sensitive-PII"],
